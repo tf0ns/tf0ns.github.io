@@ -1,0 +1,42 @@
+a{
+    color: rgb(27, 2, 37);
+	
+	}
+	th{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+body{
+background-color: rgb(150, 143, 143);
+
+}
+
+#title1{
+    color:rgb(187, 4, 4);
+	background-color: palevioletred;
+	
+}
+#title2{
+    color:rgb(187, 4, 4);
+
+}
+#title3{
+    color:rgb(187, 4, 4);
+	background-color: palevioletred;
+}
+#title4{
+    color:rgb(187, 4, 4);
+}
+#title5{
+    color:rgb(187, 4, 4);
+	background-color: palevioletred;
+}
+	
+  p{
+    font-size: smaller;
+    font-style: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  

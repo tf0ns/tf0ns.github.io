@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Homework 1</title>
+    <link rel="stylesheet" href="hw2.css">
+	
+	</head>
+    <body>
+	
+
+	
+<h1>CNIT 131A XML AND JSON Assignments</h1>
+<h2><em><a href="index.html">Homework</em></h2>
+<hr>
+<ul>
+<li><a href="HW1.html">HW 1</li></a>
+<li><a href="HW2.html">HW 2</li></a>
+</ul>
+
+<hr>
+<h3>HW 2</h3>
+
+<nav>
+
+<table cellspacing="20" cellpadding="15">
+
+<tr>
+<th>Title</th>
+
+<th>Author</th>
+
+<th>Publisher</th>
+
+</tr> 
+
+<tr align="center"> 
+<td> 
+<ul>
+<li id="title1" title="360 pages"><strong>Intro duction to HTML</strong></li>
+<li id="title2" title="480 pages"><strong>Networking Infrastructure</strong></li>
+<li id="title3" title="575 pages"><strong>Soft Skills in IT</strong></li>
+<li id="title4" title="600 pages"><strong>Network Security</strong></li>
+<li id="title5" title="790 pages"><strong>XML & JSON</strong></li>
+
+</ul>
+
+</td> 
+
+<td>
+<ul>
+<li>Joseph Gardner</li>
+<li>Adam Douglas & Janice Dall</li>
+<li>Mark Hunter</li>
+<li>Jennifer Starter & Yuri Adantov</li>
+<li>Stuart Bell</li>
+</ul>
+</td>
+
+<td>
+<ul>
+<li>Press ©</li>
+<li>Cengage;©</li>
+<li>Bolding Publisher©</li>
+<li>Wrox©</li>
+<li>Cengage;©</li>
+</ul>
+</td>
+
+
+</tr> 
+
+</table>
+
+    
+	</nav>
+
+<p>Books are being donated by instructors and publishers</p>
+
+
+	</body> 
