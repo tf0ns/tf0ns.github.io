@@ -1,42 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:template match="/">
-    <html>
-      <body>
-        <h1>List of Clients</h1>
-        <table>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+  <html>
+    <head>
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+        th {
+          background-color: #f2f2f2;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Client Accounts</h1>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Account Total</th>
+        </tr>
+        <xsl:for-each select="Accounts/Client">
           <tr>
-	  <th>Client ID</th>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>E-mail</th>
-            <th>Account Total</th>
+            <td><xsl:value-of select="@ID"/></td>
+            <td><xsl:value-of select="Name/First"/></td>
+            <td><xsl:value-of select="Name/Last"/></td>
+            <td><xsl:value-of select="Address/Street"/></td> 
+            <td><xsl:value-of select="Phone"/></td>
+            <td><xsl:value-of select="E-mail"/></td>
+            <td><xsl:value-of select="Account_Total"/></td>
           </tr>
-          <xsl:for-each select="Accounts/Client">
-		      <td><xsl:value-of select="@ID"/></td>
-              <td><xsl:value-of select="Name/First"/></td>
-			   <td><xsl:value-of select="Name/Last"/></td>
-              <td><xsl:value-of select="Phone"/></td>
-              <td><xsl:value-of select="E-mail"/></td>
-              <td>
-                <xsl:choose>
-                  <xsl:when test="Account_Total>79999">
-                    <span class="bgred">
-                      <xsl:value-of select="Account_Total"/>
-                    </span>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:value-of select="Account_Total"/>
-                  </xsl:otherwise>
-                </xsl:choose>
-              </td>
-            </tr>
-          </xsl:for-each>
-        </table>
-      </body>
-    </html>
-  </xsl:template>
+        </xsl:for-each>
+      </table>
+    </body>
+  </html>
+</xsl:template>
+
 </xsl:stylesheet>
+
 
 
 
