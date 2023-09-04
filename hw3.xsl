@@ -35,7 +35,6 @@
             <td><xsl:value-of select="@ID"/></td>
             <td><xsl:value-of select="Name/First"/></td>
             <td><xsl:value-of select="Name/Last"/></td>
-            <td><xsl:value-of select="Address/Street"/></td> 
             <td><xsl:value-of select="Phone"/></td>
             <td><xsl:value-of select="E-mail"/></td>
             <td><xsl:value-of select="Account_Total"/></td>
