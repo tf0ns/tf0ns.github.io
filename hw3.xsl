@@ -12,7 +12,6 @@
             <th>Account Total</th>
           </tr>
           <xsl:for-each select="Accounts/Client">
-            <tr> <td><xsl:value-of select="@ID"/></td>
               <td><xsl:value-of select="Name/First"/></td>
 			   <td><xsl:value-of select="Name/Last"/></td>
               <td><xsl:value-of select="Phone"/></td>
