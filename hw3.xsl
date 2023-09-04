@@ -6,12 +6,14 @@
         <h1>List of Clients</h1>
         <table>
           <tr>
+		  <th>Client ID</th>
             <th>Name</th>
             <th>Phone</th>
             <th>E-mail</th>
             <th>Account Total</th>
           </tr>
           <xsl:for-each select="Accounts/Client">
+		  <td><xsl:value-of select="@ID"/></td>
               <td><xsl:value-of select="Name/First"/></td>
 			   <td><xsl:value-of select="Name/Last"/></td>
               <td><xsl:value-of select="Phone"/></td>
