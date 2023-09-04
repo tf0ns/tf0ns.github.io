@@ -6,21 +6,21 @@
         <h1>List of Clients</h1>
         <table>
           <tr>
-		  <th>Client ID</th>
+	  <th>Client ID</th>
             <th>Name</th>
             <th>Phone</th>
             <th>E-mail</th>
             <th>Account Total</th>
           </tr>
           <xsl:for-each select="Accounts/Client">
-		  <td><xsl:value-of select="@ID"/></td>
+		      <td><xsl:value-of select="@ID"/></td>
               <td><xsl:value-of select="Name/First"/></td>
 			   <td><xsl:value-of select="Name/Last"/></td>
               <td><xsl:value-of select="Phone"/></td>
               <td><xsl:value-of select="E-mail"/></td>
               <td>
                 <xsl:choose>
-                  <xsl:when test="Account_Total > 79999">
+                  <xsl:when test="Account_Total>79999">
                     <span class="bgred">
                       <xsl:value-of select="Account_Total"/>
                     </span>
