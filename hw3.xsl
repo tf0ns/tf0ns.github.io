@@ -15,9 +15,7 @@
           padding: 8px;
           text-align: center;
         }
-        th {
-          background-color:purple;
-        }
+		#ID=''
       </style>
     </head>
     <body>
@@ -38,10 +36,16 @@
             <td><xsl:value-of select="Name/Last"/></td>
             <td><xsl:value-of select="Phone"/></td>
             <td><xsl:value-of select="E-mail"/></td>
-            <td><xsl:value-of select="Account_Total"/></td>
-          </tr>
-		  
-        </xsl:for-each>
+            <xsl:choose>
+			<xsl:when test="Account_Total<80000">
+			<td class="bgred"><xsl:value-of select="Account_Total"/></td>
+          </xsl:when>
+		  <xsl:otherwise>
+		  <td><xsl:value-of select="Account_Total"></td>
+		  </xsl:otherwise>
+		</xsl:choose>
+		</tr>
+		</xsl:for-each>
       </table>
     </body>
   </html>
