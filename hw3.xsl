@@ -40,6 +40,7 @@
             <td><xsl:value-of select="E-mail"/></td>
             <td><xsl:value-of select="Account_Total"/></td>
           </tr>
+		  
         </xsl:for-each>
       </table>
     </body>
