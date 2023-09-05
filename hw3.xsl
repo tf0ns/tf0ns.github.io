@@ -8,6 +8,7 @@
         table {
           border-collapse: collapse;
           width: 100%;
+          color: purple; 
         }
         th, td {
           border: 1px solid #ddd;
@@ -15,7 +16,7 @@
           text-align: center;
         }
         th {
-          background-color: #f2f2f2;
+          background-color:purple;
         }
       </style>
     </head>
