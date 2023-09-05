@@ -39,7 +39,7 @@
               <td><xsl:value-of select="Phone"/></td>
               <td><xsl:value-of select="E-mail"/></td>
               <td>
-                <xsl:attribute name="class">
+                <xsl:attribute name="Account_Total">
                   <xsl:choose>
                     <xsl:when test="Account_Total < 80000">bgred</xsl:when>
                   </xsl:choose>
