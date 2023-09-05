@@ -15,7 +15,6 @@
           padding: 8px;
           text-align: center;
         }
-		#ID=''
       </style>
     </head>
     <body>
