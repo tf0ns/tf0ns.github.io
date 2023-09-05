@@ -15,16 +15,7 @@
             padding: 8px;
             text-align: right;
           }
-          .bgred {
-            background-color: red;
-          }
-		  #less1{
-		  color:red;
-		  }
-		  #less2{
-		  color:red;
-		  }
-		  #equal1{
+		  .bgred{
 		  color:red;
 		  }
         </style>
@@ -50,7 +41,7 @@
               <td>
                 <xsl:attribute name="class">
                   <xsl:choose>
-                    <xsl:when test="Account_Total &lt; 80000">bgred</xsl:when>
+                    <xsl:when test="Account_Total < 80000">bgred</xsl:when>
                   </xsl:choose>
                 </xsl:attribute>
                 <xsl:value-of select="Account_Total"/>
