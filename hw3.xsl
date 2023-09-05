@@ -18,6 +18,15 @@
           .bgred {
             background-color: red;
           }
+		  #less1{
+		  color:red;
+		  }
+		  #less2{
+		  color:red;
+		  }
+		  #equal1{
+		  color:red;
+		  }
         </style>
       </head>
       <body>
