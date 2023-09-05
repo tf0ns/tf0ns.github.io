@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="/">
@@ -15,9 +14,9 @@
             padding: 8px;
             text-align: right;
           }
-		  .bgred{
-		  color:red;
-		  }
+		  .bgred {
+            color: red;
+          }
         </style>
       </head>
       <body>
@@ -39,9 +38,9 @@
               <td><xsl:value-of select="Phone"/></td>
               <td><xsl:value-of select="E-mail"/></td>
               <td>
-                <xsl:attribute name="Account_Total">
+                <xsl:attribute name="class">
                   <xsl:choose>
-                    <xsl:when test="Account_Total < 80000">bgred</xsl:when>
+                    <xsl:when test="Account_Total &lt; 80000">bgred</xsl:when>
                   </xsl:choose>
                 </xsl:attribute>
                 <xsl:value-of select="Account_Total"/>
@@ -54,10 +53,3 @@
   </xsl:template>
 
 </xsl:stylesheet>
-
-
-
-
-
-
-
