@@ -8,12 +8,15 @@
         table {
           border-collapse: collapse;
           width: 100%;
-          color: purple; 
+          color: purple;
         }
         th, td {
           border: 1px solid #ddd;
           padding: 8px;
           text-align: center;
+        }
+        .bgred {
+          background-color: red;
         }
       </style>
     </head>
@@ -36,15 +39,15 @@
             <td><xsl:value-of select="Phone"/></td>
             <td><xsl:value-of select="E-mail"/></td>
             <xsl:choose>
-			<xsl:when test="Account_Total &lt; 80000">
-			<td class="bgred"><xsl:value-of select="Account_Total"/></td>
-          </xsl:when>
-		  <xsl:otherwise>
-		  <td><xsl:value-of select="Account_Total"></td>
-		  </xsl:otherwise>
-		</xsl:choose>
-		</tr>
-		</xsl:for-each>
+              <xsl:when test="Account_Total &lt; 80000">
+                <td class="bgred"><xsl:value-of select="Account_Total"/></td>
+              </xsl:when>
+              <xsl:otherwise>
+                <td><xsl:value-of select="Account_Total"/></td>
+              </xsl:otherwise>
+            </xsl:choose>
+          </tr>
+        </xsl:for-each>
       </table>
     </body>
   </html>
