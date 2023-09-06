@@ -16,7 +16,7 @@
 </Address>
 <Phone>(532) 555-9939</Phone>
 <E-mail>gwu@brockton.com</E-mail>
-<Account_Total>$60000
+<Account_Total id="less1">$60000
 </Account_Total>
 </Client>
 
@@ -33,7 +33,7 @@
 </Address>
 <Phone>(532) 555-3813</Phone>
 <E-mail>cynthia@brownes.com</E-mail>
-<Account_Total>$80000
+<Account_Total id="equal1">$80000
 </Account_Total>
 </Client>
 
@@ -50,7 +50,7 @@
 </Address>
 <Phone>(532) 555-8981</Phone>
 <E-mail>rolson@delisp.net</E-mail>
-<Account_Total>$25000</Account_Total>
+<Account_Total id="less2">$25000</Account_Total>
 </Client>
 
 <Client ID="CS5771">
