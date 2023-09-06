@@ -14,7 +14,9 @@
             padding: 8px;
             text-align: right;
           }
-		  
+		  .bgred{
+		  color:red;
+		  }
         </style>
       </head>
       <body>
@@ -35,15 +37,14 @@
               <td><xsl:value-of select="Name/Last"/></td>
               <td><xsl:value-of select="Phone"/></td>
               <td><xsl:value-of select="E-mail"/></td>
-                <xsl:attribute name="class">
-                  <xsl:choose>
-                    <xsl:when test="Account_Total &lt; 80000">
-					<td class="bgred">
-					<xsl:value-of select="Account_Total"/>
-					</xsl:when>
-                  </xsl:choose>
-                </xsl:attribute>
-                <xsl:value-of select="Account_Total"/>
+                <td>
+        <xsl:variable name="AccountTotal" select="number(Account_Total)"/>
+        <xsl:choose>
+          <xsl:when test="$AccountTotal &lt; 80000">
+            <xsl:attribute name="class">bgred</xsl:attribute>
+          </xsl:when>
+        </xsl:choose>
+        <xsl:value-of select="Account_Total"/>
               </td>
             </tr>
           </xsl:for-each>
