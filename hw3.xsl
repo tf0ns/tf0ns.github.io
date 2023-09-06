@@ -14,7 +14,7 @@
             padding: 8px;
             text-align: right;
           }
-		  .bgred {
+		  xsl:when {
             color: red;
           }
         </style>
@@ -40,7 +40,7 @@
               <td>
                 <xsl:attribute name="class">
                   <xsl:choose>
-                    <xsl:when test="Account_Total &lt; 80000">bgred</xsl:when>
+                    <xsl:when test="Account_Total &lt; 80000"></xsl:when>
                   </xsl:choose>
                 </xsl:attribute>
                 <xsl:value-of select="Account_Total"/>
