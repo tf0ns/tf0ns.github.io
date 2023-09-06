@@ -14,7 +14,15 @@
             padding: 8px;
             text-align: right;
           }
-		  
+		  #less1{
+		  color:red;
+		  }
+		  #equal1{
+		  color:red;
+		  }
+		  #less2{
+		  color:red;
+		  }
         </style>
       </head>
       <body>
@@ -35,13 +43,8 @@
               <td><xsl:value-of select="Name/Last"/></td>
               <td><xsl:value-of select="Phone"/></td>
               <td><xsl:value-of select="E-mail"/></td>
-			  <xsl:choose>
-			  <xsl:when test="Account_Total<80000">
-			  <td class="bgred"><xsl:value-of select="Account_Total"/></td>
-			  </xsl:when>
-<xsl: otherwise>
-<td>
-<xsl:value-of select="Account_Total"/></td>
+			  <td><xsl:value-of select="Account_Total"/></td>
+
             </tr>
           </xsl:for-each>
         </table>
