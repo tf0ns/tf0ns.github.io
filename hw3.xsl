@@ -35,7 +35,19 @@
               <td><xsl:value-of select="Name/Last"/></td>
               <td><xsl:value-of select="Phone"/></td>
               <td><xsl:value-of select="E-mail"/></td>
-              <td><xsl:value-of select="Account_Total"/></td>
+			  <xsl:template match="td">
+  <xsl:variable name="account_total" select="xsl:value-of(Account_Total)"/>
+  <xsl:if test="$account_total &lt; 80000">
+    <td style="color: red;">
+      <xsl:value-of select="$account_total"/>
+    </td>
+  </xsl:if>
+  <xsl:if test="$account_total &gt;= 80000">
+    <td style="color: black;">
+      <xsl:value-of select="$account_total"/>
+    </td>
+  </xsl:if>
+</xsl:template>
             </tr>
           </xsl:for-each>
         </table>
