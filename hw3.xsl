@@ -14,9 +14,7 @@
             padding: 8px;
             text-align: right;
           }
-		  xsl:when {
-            color: red;
-          }
+		  
         </style>
       </head>
       <body>
@@ -37,10 +35,12 @@
               <td><xsl:value-of select="Name/Last"/></td>
               <td><xsl:value-of select="Phone"/></td>
               <td><xsl:value-of select="E-mail"/></td>
-              <td>
                 <xsl:attribute name="class">
                   <xsl:choose>
-                    <xsl:when test="Account_Total &lt; 80000"></xsl:when>
+                    <xsl:when test="Account_Total &lt; 80000">
+					<td class="bgred">
+					<xsl:value-of select="Account_Total"/>
+					</xsl:when>
                   </xsl:choose>
                 </xsl:attribute>
                 <xsl:value-of select="Account_Total"/>
